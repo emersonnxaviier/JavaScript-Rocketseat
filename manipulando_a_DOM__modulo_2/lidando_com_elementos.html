@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<div id="app">
+
+</div>
+
+
+<script>
+    //criando elementos
+
+var linkElement = document.createElement('a');  // cria um link, a significa à <a>(tag a).
+linkElement.setAttribute('href', 'http://topflix.tv'); //passa qual link será acessado.
+
+var textElement = document.createTextNode('Acessar Filmes'); //cria um texto que clicando nele leva ao site, mas para isso precisa posicionar o texto com o link.
+linkElement.appendChild(textElement); //posiciona/adiciona o texto ao link, assim ao clicar no texto leva ao site.
+
+var containerElement = document.querySelector('div#app'); // busca a div com id igual a app.
+containerElement.appendChild(linkElement); // adiciona o link que esta com o texto dentro da div.
+
+</script>
+
+</body>
+</html>

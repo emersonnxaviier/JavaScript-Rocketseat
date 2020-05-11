@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=, initial-scale=1.0"/>
+    <title>Document</title>
+</head>
+<body>
+
+<!--  Crie um botão que ao ser clicado cria um novo elemento em tela com a forma de um quadrado
+vermelho com 100px de altura e largura. Sempre que o botão for clicado um novo quadrado deve
+aparecer na tela. -->
+
+
+
+
+<button class="botao" id="botao">   Criar quadro vermelho</button>
+
+<div id="app">  
+     <div id="box">  </div>
+</div>
+
+<script>
+
+var btnElement = document.querySelector('#botao');
+var quadElement = document.querySelector('#box');
+
+btnElement.onclick = function(){
+
+    var quad = document.createElement('div');
+    quad.style.width = '100px';
+    quad.style.height = '100px';
+    quad.style.margin = '10px';
+    quad.style.backgroundColor = '#F00';
+
+    quadElement.appendChild(quad);
+}
+
+
+</script>
+</body>
+</html>

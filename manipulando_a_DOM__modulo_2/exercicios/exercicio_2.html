@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Document</title>
+</head>
+<body>
+
+<!--  Utilizando o resultado do primeiro desafio, toda vez que o usuário passar o mouse por cima de
+algum quadrado troque sua cor para uma cor aleatória gerada pela função abaixo:
+function getRandomColor() {
+ var letters = "0123456789ABCDEF";
+ var color = "#";
+ for (var i = 0; i < 6; i++) {
+ color += letters[Math.floor(Math.random() * 16)];
+ }
+ return color;
+}
+var newColor = getRandomColor(); // #E943F0  -->
+
+
+    
+    <button class="botao" id="botao">   Criar quadro vermelho</button>
+
+    <div id="app">  
+         <div id="box" >  </div>
+    </div>
+    
+    <script>
+    
+    var btnElement = document.querySelector('#botao');
+    var quadElement = document.querySelector('#box');
+
+    function getRandomColor() {
+        var letters = "0123456789ABCDEF";
+        var color = "#";
+        for (var i = 0; i < 6; i++) {
+        color += letters[Math.floor(Math.random() * 16)];
+        }
+        return color;
+        }
+        var newColor = getRandomColor(); // #E943F0
+    
+    btnElement.onclick = function(){
+    
+        var quad = document.createElement('div');
+        quad.style.width = '100px';
+        quad.style.height = '100px';
+        quad.style.margin = '10px';
+        quad.style.backgroundColor = '#F00';
+    
+        quadElement.appendChild(quad);
+
+        quad.onmouseover = function (){
+        quad.style.backgroundColor = getRandomColor();
+
+        }
+          quadElement.appendChild(quad);
+    }
+
+
+    
+    </script>
+
+</body>
+</html>

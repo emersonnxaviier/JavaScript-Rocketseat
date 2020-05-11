@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Document</title>
+</head>
+<body>
+
+<!-- A partir do seguinte vetor:
+var nomes = ["Diego", "Gabriel", "Lucas"];
+Preencha uma lista (<ul>) no HTML com os itens da seguinte forma:
+● Diego
+● Gabriel
+● Luca  -->
+
+
+
+<ul>
+
+
+</ul>
+
+
+
+<script>
+
+var nomes = ["Diego", "Gabriel", "Lucas"];
+var listaElement = document.querySelector('ul');
+
+
+for(nome of nomes){    // nome é uma varivél criada e nomes é o vetor
+    var liElment = document.createElement('li');
+    var textElement = document.createTextNode(nome);
+    liElment.appendChild(textElement);
+
+    listaElement.appendChild(liElment);
+}
+
+/*  enquanto nome nao receber todos os nomes executa o for.
+    liElement cria os li no html.
+    textElement recebe cada nome do vetor.
+    liElment é o li que receberá os nomes.
+    listaElement é o ul do html que ira receber todos os li com os nomes
+*/
+
+</script>
+</body>
+</html>

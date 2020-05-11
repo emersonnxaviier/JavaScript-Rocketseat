@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Document</title>
+</head>
+<body>
+    <div id="app">
+
+        <input type="text" name="nome" id="nome"/>
+        <button class="botao">Adicionar</button>
+
+    </div>
+
+<script>
+
+    /*1 forma
+    var inputElement = document.getElementById('nome');
+    */
+
+    /*2 forma   
+    var inputElement = document.getElementsByTagName('input');
+    */ 
+
+    /*3 forma
+    var inputElement = document.getElementsByClassName('nome');
+    */
+
+    /*4 forma
+    var inputElement = document.querySelector( 'div#app input');
+
+    var inputElement = document.querySelector( 'input[name=nome]');
+    */
+
+    var inputElement = document.querySelector( 'input[name=nome]');
+    var buttonElement = document.querySelector( 'button.botao');
+    
+    buttonElement.onclick = function(){
+
+        var text = inputElement.value; //a variavel text vai receber o valor inserido em inputElement.
+
+        alert('bem vindo, '+text);
+    }
+
+</script>
+
+</body>
+</html>

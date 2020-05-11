@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ex5</title>
+</head>
+<body>
+
+    <p> Dado o seguinte vetor de objetos:
+        var usuarios = [
+         {
+         nome: "Diego",
+         habilidades: ["Javascript", "ReactJS", "Redux"]
+         },
+         {
+         nome: "Gabriel",
+         habilidades: ["VueJS", "Ruby on Rails", "Elixir"]
+         }
+        ];
+
+        Escreva uma função que produza o seguinte resultado:
+
+        O Diego possui as habilidades: Javascript, ReactJS, Redux
+        O Gabriel possui as habilidades: VueJS, Ruby on Rails, Elixir </p>
+
+
+<script>
+
+var usuarios = [
+  {
+    nome: "Diego",
+    habilidades: ["Javascript", "ReactJS", "Redux"]
+  },
+  { nome: "Gabriel", habilidades: ["VueJS", "Ruby on Rails", "Elixir"] }
+];
+
+
+const showMessage = usuarios => {
+  for (const user of usuarios) {
+    const { nome, habilidades } = user;
+        console.log(`O ${nome} possui as habilidades: ${habilidades.join(", ")}`);
+  }
+};
+
+
+
+</script>
+</body>
+</html>

@@ -14,7 +14,7 @@
 
 -   Servidor utilizado no exemplo é o servidor do github, a api do github para estar retornando as informações do usuário, e o que vamos perceber é que a página não precisará recarregar para retornar as informações.
 
--    xhr(nomeDaVariavel).open('GET', 'https://api.github.com/users/diego3g');  -> No primeiro parametro, como vai buscar informações o metodo é GET e o segundo a URL que vei buscar os dados.
+-    xhr(nomeDaVariavel).open('GET', 'https://api.github.com/users/emersonnxaviier');  -> No primeiro parametro, como vai buscar informações o metodo é GET e o segundo a URL que vei buscar os dados.
 
 **Como identificar no javaScript que uma requisição terminou ?**
 

@@ -14,11 +14,11 @@
 
 -   Servidor utilizado no exemplo é o servidor do github, a api do github para estar retornando as informações do usuário, e o que vamos perceber é que a página não precisará recarregar para retornar as informações.
 
--    xhr(nomeDaVariavel).open('GET', 'https://api.github.com/users/emersonnxaviier');  -> No primeiro parametro, como vai buscar informações o metodo é GET e o segundo a URL que vei buscar os dados.
+-   ` xhr(nomeDaVariavel).open('GET', 'https://api.github.com/users/emersonnxaviier'); ` -> No primeiro parametro, como vai buscar informações o metodo é GET e o segundo a URL que vei buscar os dados.
 
 **Como identificar no javaScript que uma requisição terminou ?**
 
--   Uma requisiçao assincrona não acontece no mesmo fluxo do script, e o javaScript não pode esperar a requisição terminar para executar o resto do código. Então para isso utiliza o xhr(nomeDaVariavel).onreadystatechange recebendo uma função e nela fazando uma verificação para em seguida retornar as informações ficando xhr(nomeDaVariavel).onreadystatechange = function(){ if(xhr.readyState === 4){ console.log(JSON.parse(xhr.responseText));} no if o 4 porque é quando a resposta da requisição volta para você.
+-   Uma requisiçao assincrona não acontece no mesmo fluxo do script, e o javaScript não pode esperar a requisição terminar para executar o resto do código. Então para isso utiliza o `xhr(nomeDaVariavel).onreadystatechange` recebendo uma função e nela fazando uma verificação para em seguida retornar as informações ficando `xhr(nomeDaVariavel).onreadystatechange = function(){ if(xhr.readyState === 4){ console.log(JSON.parse(xhr.responseText));}` no if é usado o 4 porque é quando a resposta da requisição volta para você.
 
 
 # AULA PROMISES
@@ -39,11 +39,11 @@
 
 -   O AXIOS irá substituri o new XHTMLHttpRequest(); 
 
--   Por baixo dos panos o AXIOS é uma new XHTMLHttpRequest(); mas o AXIOS irá ajudar a retornar os valores de forma mais facil.
+-   Por baixo dos panos o AXIOS é uma `new XHTMLHttpRequest();` mas o AXIOS irá ajudar a retornar os valores de forma mais facil.
 
 **instalar o AXIOS**
 
--   No HTML antes de importar o(s) arquivo(s) de javaScript importa o AXIOS para ele já está importado quando for utilizar, com o código:       <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+-   No HTML antes de importar o(s) arquivo(s) de javaScript importa o AXIOS para ele já está importado quando for utilizar,        `<script src="https://unpkg.com/axios/dist/axios.min.js"></script>`
 
 
 

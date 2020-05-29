@@ -28,7 +28,7 @@ RENDERIZAR = FIXAR = TRADUZIR.
 
 - Em seguida chama a função nas operações realizadas.
 
-##Quando atualizar a página, ir no localStorage e preencher a lista com os valores
+## Quando atualizar a página, ir no localStorage e preencher a lista com os valores
 
 - Na variavél todos que recebe o array troca por `var todos = JSON.parse(localStorage.getItem('list_todos'))`, como está no formato JSON o parse é para trasformar novamente em um array.
 

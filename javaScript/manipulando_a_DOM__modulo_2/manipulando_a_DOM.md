@@ -12,17 +12,17 @@
 
 Como conseguir referênciar elementos da(o) DOM/html através do javaScript, e não simplesmente disparar eventos do html para o javaScript.
 
--       **A primeira forma** de buscar o elemento na DOM através do javaScript, é dentro da <script> </script> criar uma variavél recebendo um `document.getElementById();`
+ **A primeira forma** de buscar o elemento na DOM através do javaScript, é dentro da <script> </script> criar uma variavél recebendo um `document.getElementById();`
 
 OBS_1: o document é uma variavél global que refencia a DOM do código.
 OBS_2: `.getElementsById('nome')` vai buscar na DOM/html o elemento que tem o id igual a 'nome'.
 
--       **A segunda forma** é com o `document.getElementsByTagName();`
+**A segunda forma** é com o `document.getElementsByTagName();`
 
 OBS_1: nessa forma passamos diretamente a tag que queremos buscar, e retornará um vetor com todas as tags iguas existentes no codigo.
 
 
--       **A terceira forma** é a `document.getElementsByClassName();`
+**A terceira forma** é a `document.getElementsByClassName();`
 
 OBS_1: assim como a segunda forma ele sempre vai retornar um vetor.
 
@@ -30,7 +30,7 @@ OBS_1: assim como a segunda forma ele sempre vai retornar um vetor.
 
  **mais importante/utilizado**
 
--       **A quarta forma** é utilizando o `document.querySelector();` -> retorna um único elemento.
+**A quarta forma** é utilizando o `document.querySelector();` -> retorna um único elemento.
                                       `document.querySelectorAll();` -> retorna todos existentes.
 
 OBS_1: ele basicamente permite andar pela DOM, deixa percorrer até encontrar o elemento.

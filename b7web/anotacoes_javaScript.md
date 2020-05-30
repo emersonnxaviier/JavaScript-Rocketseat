@@ -215,7 +215,25 @@ Ex: `let nome = 'João souza';`
 
 - Para consulta somente os segundos `.getSeconds();` 
 
+- **OBS:** logicamente que para inserir um novo valor em qualquer um dos citados basta trocar o get por set.
 
 
+# MATEMÁTICA
 
+- Para calculos matematicos com o valor de PI, cosseno, seno, tangete, etc, será usado a biblioteca **Math**.
 
+- Arredondar valores `Math.round(ex: 3.67);` -> arredonda para cima ou para baixo dependendo da casa décimal.
+
+- Arredondar valores para baixo `Math.floor();` 
+
+- Arredondar valores para cima `Math.ceil();`
+
+- Saber o valor absoluto de um número `Math.abs(ex: -9898);`
+
+- O `Math.min(7, 3, 5, 8);` retorna o menor número passado.
+
+- O `Math.max(7, 3, 5, 8);` retorna o maior número passado.
+
+- O `Math.random()` normalmente é usada combinada com outra função para gerar números aleatórios.
+
+    Ex: `let sorteio = Math.floor(Math.random() * 100);` -> gerando números entre 0 e 100.

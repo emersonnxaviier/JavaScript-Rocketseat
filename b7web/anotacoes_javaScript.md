@@ -88,7 +88,7 @@ Ex: `let nome = 'João souza';`
     let nome = '1,2,3,4,5';
         let resultado = nome.split(',');  -> cria um array com cinco posições, ou seja, transformou uma string em array.
 
-             RESULTADO: nome = ['1', '2', '3', '4', '5']
+             RESULTADO: ['1', '2', '3', '4', '5']
 
 
 # MÉTODOS DE MANIPULAÇÃO DE NUMBERS

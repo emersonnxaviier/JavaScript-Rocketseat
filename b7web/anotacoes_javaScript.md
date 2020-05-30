@@ -123,7 +123,7 @@ Ex: `let nome = 'João souza';`
     Ex: ` let lista = ['ovo', 'farinha', 'leite', 'açucar']; `
         ` let res = lista.indexOf('leite'); `
 
-        RESULTADO:  2      -> lembrando que um array começa na posição 0, e se o item não fosse encontrado o resultado seria -1.
+    RESULTADO: 2 -> lembrando que um array começa na posição 0, e se o item não fosse encontrado o resultado seria -1.
 
 
 - O .pop() -> remove o ultimo item do array.

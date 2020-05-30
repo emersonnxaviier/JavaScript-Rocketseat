@@ -64,8 +64,9 @@ Ex:  `let nome = 'João souza';`
 
 - O .replace(x, y) funciona da seguinte forma, procure por X e substitua por Y.
 
-Ex:   `let nome = 'João souza';`
-      `let resultado = nome.replace(souza, silva);`
+    Ex:   `let nome = 'João souza';`
+          `let resultado = nome.replace(souza, Silva);`
+          RESULTADO: João Silva
 
 
 - O .toUpperCase() ->  torna todas as letras maiusculas.
@@ -104,22 +105,25 @@ Ex: `let nome = 'João souza';`
 - O .toString -> usado em um array, transforma em uma string o array.
 
     Ex: `let lista = ['ovo', 'farinha', 'leite', 'açucar'];`
-        ` let res = lista.toString(); `
-            RESULTADO: 'ovo, farinha, leite, açucar'
+     ` let res = lista.toString(); `
+
+        RESULTADO: 'ovo, farinha, leite, açucar'
 
 
 - O .join(X) -> pega um array, junta tudo em uma string e separa por X, sendo X qualquer coisa que quiser.
 
     Ex: `let lista = ['ovo', 'farinha', 'leite', 'açucar'];`
         ` let res = lista.join('-'); `
-            RESULTADO: 'ovo-farinha-leite-açucar'
+
+        RESULTADO: 'ovo-farinha-leite-açucar'
 
 
 - O .indexOf(X) -> basicamente vai procurar um item X especifico do array, e vai retornar a posição que se encontra esse item X.
 
     Ex: ` let lista = ['ovo', 'farinha', 'leite', 'açucar']; `
         ` let res = lista.indexOf('leite'); `
-            RESULTADO:  2      -> lembrando que um array começa na posição 0, e se o item não fosse encontrado o resultado seria -1.
+
+        RESULTADO:  2      -> lembrando que um array começa na posição 0, e se o item não fosse encontrado o resultado seria -1.
 
 
 - O .pop() -> remove o ultimo item do array.
@@ -127,7 +131,8 @@ Ex: `let nome = 'João souza';`
     Ex: ` let lista = ['ovo', 'farinha', 'leite', 'açucar']; `
         ` lista.pop(); `
         ` let res = lista; `
-            RESULTADO: ['ovo', 'farinha', 'leite']
+        
+        RESULTADO: ['ovo', 'farinha', 'leite']
 
 
 - O .shift() -> remove o primeiro item do array.
@@ -135,14 +140,16 @@ Ex: `let nome = 'João souza';`
     Ex: ` let lista = ['ovo', 'farinha', 'leite', 'açucar']; `
         ` lista.pop(); `
         ` let res = lista; `
-            RESULTADO: ['farinha', 'leite', 'açucar']
+        
+        RESULTADO: ['farinha', 'leite', 'açucar']
 
 - O .push(X) -> adiciona um item X do array.
 
     Ex: ` let lista = ['ovo', 'farinha', 'leite', 'açucar']; `
         ` lista.push('manteiga'); `
         ` let res = lista; `
-            RESULTADO: ['ovo','farinha', 'leite', 'açucar', 'manteiga']
+        
+        RESULTADO: ['ovo','farinha', 'leite', 'açucar', 'manteiga']
 
 
 - É possível alterar um item do array passando a posição e atribuindo o valor, se a posição passada não existir, ele cria um novo item.
@@ -151,7 +158,8 @@ Ex: `let nome = 'João souza';`
         ` lista[0] = 'ovos'; `
         ` lista[4] = 'prato'; `
         ` let res = lista; `
-            RESULTADO: ['ovos','farinha', 'leite', 'açucar', 'prato']
+        
+        RESULTADO: ['ovos','farinha', 'leite', 'açucar', 'prato']
 
 
 - O .splice(X, Y) -> serve para remover um elemento do array, sendo X o index do item que deve começar a remover, e o Y é quantos itens deseja remover.
@@ -159,7 +167,8 @@ Ex: `let nome = 'João souza';`
     Ex: ` let lista = ['ovo', 'farinha', 'leite', 'açucar']; `
         ` lista.splice(1, 2); `
         ` let res = lista; `
-            RESULTADO: ['ovo', 'açucar']
+        
+        RESULTADO: ['ovo', 'açucar']
 
 
 - O .concat(X) -> junta/concatena um item com outro.
@@ -167,7 +176,8 @@ Ex: `let nome = 'João souza';`
     Ex: ` let lista = ['ovo', 'farinha', 'leite', 'açucar']; `
         ` let lista2 = ['prato', 'batedeira', 'forno']; `
         ` let res = lista.concat(lista2); `
-            RESULTADO: ['ovo', 'farinha', 'leite', 'açucar', 'prato', 'batedeira', 'forno']
+        
+        RESULTADO: ['ovo', 'farinha', 'leite', 'açucar', 'prato', 'batedeira', 'forno']
 
 
 - O `.sort()` -> ordena o array em ordem alfabetica

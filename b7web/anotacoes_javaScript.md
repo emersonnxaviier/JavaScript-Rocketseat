@@ -41,10 +41,7 @@
 # LOOP FOR ARRAY
 
 - Ex: `let carros = ['Ferrari', 'Fusca', 'Palio', 'Corolla'];`
-
-      `for(let i in carros){ console.log(carros[i]) } `     
-
-         --> Sendo -> i <- uma variavél auxiliar que recebe cada posição do array.
+      `for(let i in carros){ console.log(carros[i]) } ` --> Sendo -> i <- uma variavél auxiliar que recebe cada posição do array.
 
 
 # MÉTODOS DE STRING

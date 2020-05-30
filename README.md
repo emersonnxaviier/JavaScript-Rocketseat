@@ -1,2 +1,4 @@
-# JavaScript-Rocketseat
- Resolução de exercicios de JavaScript e JavaScript ES6 do curso da Roketseat
+# JavaScript-Rocketseat-B7web
+ Resolução de exercicios JavaScript 
+ 
+ Resolução de exercícios mais anotações para ajudar iniciantes da Roketseat e b7web.

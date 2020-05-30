@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+</head>
+
+<body>
+
+    <input onkeyup="digitou(event)" type="text" id="campo" />
+
+</body>
+
+<script>
+    function digitou(e) { //a função pode receber como parametro o próprio evento
+        if (e.keyCode == 13 && e.ctrlKey == true) { // a tecla enter e control deve estar precionada.
+            let texto = document.getElementById('campo').value;
+            console.log(texto);
+        }
+
+        /* é possível enviar informações mais detalhadas sobre o evento, ou seja, o que aconteceu, quando aconteceu e detalhes especificos é 
+        possível saber a través do comando -> event ( passado no input) <- assim como o this trata do próprio elemento, o event trata do próprio 
+        evento, e mostrando as informações com um console.log() deve-se prestar atenção no keyCode:, que é o código da tecla precionada, tendo 
+        também o shiftKey:, ctrlKey:, altKey:, para identificar se a tecla foi precionada junto com o shit, control e alt.*/
+    }
+</script>
+
+
+</html>

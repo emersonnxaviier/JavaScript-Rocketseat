@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="mudanca_de_estilos.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1 id="titulo">Seja bem vindo(a)</h1>
+
+    <button id="azul">Azul</button>
+    <button id="verde">Verde</button>
+    <button id="vermelho">Vermelho</button>
+    <hr/>
+    <br/>
+    <div id="telefone">(75)9 9999-9999</div>
+    <button id="tel">Mostar Telefone</button>
+
+
+    <script>
+        var btnVerde = document.getElementById('verde');
+        var btnVermelho = document.getElementById('vermelho');
+        var btnAzul = document.getElementById('azul');
+
+        //deixar verde
+        btnVerde.onclick = function() {
+                limpar();
+                document.getElementById('titulo').classList.add('verde');
+            }
+            //deixar vermelho
+        btnVermelho.onclick = function() {
+                limpar();
+                document.getElementById('titulo').classList.add('vermelho');
+            }
+            //deixar azul
+        btnAzul.onclick = function() {
+            limpar();
+            document.getElementById('titulo').classList.add('azul');
+        }
+
+        //remove a cor que esta e coloca a nova.
+        function limpar() {
+            document.getElementById('titulo').classList.remove('azul');
+            document.getElementById('titulo').classList.remove('vermelho');
+            document.getElementById('titulo').classList.remove('verde');
+        }
+
+        //MOSTAR TELEFONE
+
+        var btnTel = document.getElementById('tel');
+
+        btnTel.onclick = function() {
+
+            document.getElementById('tel').style.display = 'none'; // quando o botao é clicado, esconde o proprio botao.
+
+            document.getElementById('telefone').style.display = 'block'; //quando o botao é clicado altera o display do campo.
+        }
+    </script>
+</body>
+
+</html>

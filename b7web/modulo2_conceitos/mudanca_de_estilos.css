@@ -1,0 +1,18 @@
+.vermelho {
+    background-color: red;
+    color: white;
+}
+
+.verde {
+    background-color: green;
+    color: white;
+}
+
+.azul {
+    background-color: blue;
+    color: white;
+}
+
+#telefone {
+    display: none;
+}

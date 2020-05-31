@@ -157,7 +157,7 @@ Ex: `let nome = 'João souza';`
     Ex: ` let lista = ['ovo', 'farinha', 'leite', 'açucar']; `
         ` lista[0] = 'ovos'; `
         ` lista[4] = 'prato'; `
-        ` let res = lista; `
+        ` let res = lista; ` 
         
         RESULTADO: ['ovos','farinha', 'leite', 'açucar', 'prato']
 

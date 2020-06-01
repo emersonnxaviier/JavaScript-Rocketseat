@@ -65,7 +65,8 @@ Ex:  `let nome = 'João souza';`
 
     Ex:   `let nome = 'João souza';`
           `let resultado = nome.replace(souza, Silva);`
-          RESULTADO: João Silva
+          
+        RESULTADO: João Silva
 
 
 - O .toUpperCase() ->  torna todas as letras maiusculas.
@@ -85,7 +86,7 @@ Ex: `let nome = 'João souza';`
     let nome = '1,2,3,4,5';
         let resultado = nome.split(',');  -> cria um array com cinco posições, ou seja, transformou uma string em array.
 
-             RESULTADO: ['1', '2', '3', '4', '5']
+    RESULTADO: ['1', '2', '3', '4', '5']
 
 
 # MÉTODOS DE MANIPULAÇÃO DE NUMBERS
@@ -106,7 +107,7 @@ Ex: `let nome = 'João souza';`
     Ex: `let lista = ['ovo', 'farinha', 'leite', 'açucar'];`
      ` let res = lista.toString(); `
 
-        RESULTADO: 'ovo, farinha, leite, açucar'
+    RESULTADO: 'ovo, farinha, leite, açucar'
 
 
 - O .join(X) -> pega um array, junta tudo em uma string e separa por X, sendo X qualquer coisa que quiser.
@@ -114,7 +115,7 @@ Ex: `let nome = 'João souza';`
     Ex: `let lista = ['ovo', 'farinha', 'leite', 'açucar'];`
         ` let res = lista.join('-'); `
 
-        RESULTADO: 'ovo-farinha-leite-açucar'
+    RESULTADO: 'ovo-farinha-leite-açucar'
 
 
 - O .indexOf(X) -> basicamente vai procurar um item X especifico do array, e vai retornar a posição que se encontra esse item X.
@@ -131,7 +132,7 @@ Ex: `let nome = 'João souza';`
         ` lista.pop(); `
         ` let res = lista; `
         
-        RESULTADO: ['ovo', 'farinha', 'leite']
+    RESULTADO: ['ovo', 'farinha', 'leite']
 
 
 - O .shift() -> remove o primeiro item do array.
@@ -140,7 +141,8 @@ Ex: `let nome = 'João souza';`
         ` lista.pop(); `
         ` let res = lista; `
         
-        RESULTADO: ['farinha', 'leite', 'açucar']
+    RESULTADO: ['farinha', 'leite', 'açucar']
+
 
 - O .push(X) -> adiciona um item X do array.
 
@@ -148,7 +150,7 @@ Ex: `let nome = 'João souza';`
         ` lista.push('manteiga'); `
         ` let res = lista; `
         
-        RESULTADO: ['ovo','farinha', 'leite', 'açucar', 'manteiga']
+    RESULTADO: ['ovo','farinha', 'leite', 'açucar', 'manteiga']
 
 
 - É possível alterar um item do array passando a posição e atribuindo o valor, se a posição passada não existir, ele cria um novo item.
@@ -158,7 +160,7 @@ Ex: `let nome = 'João souza';`
         ` lista[4] = 'prato'; `
         ` let res = lista; ` 
         
-        RESULTADO: ['ovos','farinha', 'leite', 'açucar', 'prato']
+    RESULTADO: ['ovos','farinha', 'leite', 'açucar', 'prato']
 
 
 - O .splice(X, Y) -> serve para remover um elemento do array, sendo X o index do item que deve começar a remover, e o Y é quantos itens deseja remover.
@@ -167,7 +169,7 @@ Ex: `let nome = 'João souza';`
         ` lista.splice(1, 2); `
         ` let res = lista; `
         
-        RESULTADO: ['ovo', 'açucar']
+    RESULTADO: ['ovo', 'açucar']
 
 
 - O .concat(X) -> junta/concatena um item com outro.
@@ -176,7 +178,7 @@ Ex: `let nome = 'João souza';`
         ` let lista2 = ['prato', 'batedeira', 'forno']; `
         ` let res = lista.concat(lista2); `
         
-        RESULTADO: ['ovo', 'farinha', 'leite', 'açucar', 'prato', 'batedeira', 'forno']
+    RESULTADO: ['ovo', 'farinha', 'leite', 'açucar', 'prato', 'batedeira', 'forno']
 
 
 - O `.sort()` -> ordena o array em ordem alfabetica
@@ -241,3 +243,45 @@ Ex: `let nome = 'João souza';`
 # INTERVALOS 
 
 - É possível configurar um código para rodar de X em X segundos/horas/minutos.
+
+- O `setInterval(X, Y)` -> permite que uma função seja executada em Y segundos/horas/minutos, sendo X o nome da função e Y o tempo para ela ser executada passada em milissegundos.
+
+- O `clearInterval(X)` -> limpa/para o intervalo, sendo X a variável que recebe o setInterval.
+
+- O `setTimeOut(X, Y)` -> passa a função, informa um tempo específico e ele vai **esperar** esse tempo para depois rodar a função, sendo X a função e Y o tempo.
+
+
+# DESCONSTRUINDO OBJETOS / DESESTRUTURAÇÃO
+
+- Significa acessar informações especificas do objeto e transformar em uma variável.
+
+    *Vejam os exemplos em b7web desconstrucao_objetos.js*
+
+
+# DESCONSTRUINDO ARRAYS / DESESTRUTURAÇÃO
+
+   *Vejam os exemplos em b7web desconstrucao_array.js*
+
+
+# ARROW FUNCTION
+
+- Ex normal:    `function somar(x, y){  return x+y; }`
+
+- Ex arrow:     `let somar = (x, y) => x+y;`
+
+- **OBS:** na arrow function não existe o objeto **this**.
+
+
+# OPERADOR SPREAD
+
+- Muito utilizado em funções em que se tem uma variável com determinados dados e você não quer recriar esses dados apenas adicionar mais coisas.
+
+    *Vejam os exemplos em b7web operador_spread.js*
+
+
+# OPERADOR REST
+
+    *Vejam os exemplos em b7web operador_rest.js*
+
+
+# 

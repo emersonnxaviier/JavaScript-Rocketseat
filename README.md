@@ -281,7 +281,21 @@ Ex: `let nome = 'João souza';`
 
 # OPERADOR REST
 
-    *Vejam os exemplos em b7web operador_rest.js*
+   *Vejam os exemplos em b7web operador_rest.js*
 
 
-# 
+# INCLUDES E REPEAT
+
+- O `.includes(X)` -> verifica se X está na lista, retornando true ou false. Utilizado em arrays e strings.
+
+- Se quiser que algo se repita na tela utiliza-se o repeat. Ex: `console.log('x'.repeat(5) );` mostra o X 5 vezes.
+
+
+# OBJETO: KEY, VALUES E ENTRIES
+
+- Funciona para arrays e objetos
+
+Ex: `let pessoa = { nome:'Paulo', sobrenome:'Gomes', idade: 30};`
+    `console.log( Object.key(pessoa) );` -> retorna todas as chaves que tem no objeto especifico.
+    `console.log( Object.value(pessoa) );` -> retorna um array com os valores que tem nesse objeto.
+    `console.log( Object.entries(pessoa) );` -> em cada item vai gerar um array, que nesse caso seria o primeiro item nome segundo sobrenomee etc.
